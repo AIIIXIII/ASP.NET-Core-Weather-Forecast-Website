@@ -1,0 +1,55 @@
+﻿@model WeatherData
+@{ Layout = "_Layout"; ViewBag.Title = "Meteo";}
+
+@try
+{
+    <h2>Weather Info @Model.Title</h2>
+    string tipoMeteo = "";
+    switch (Model.Weather[0].Visibility.ToString())
+    {
+        case "Rain": tipoMeteo = "Rainy 🌧"; break;
+        case "Clear": tipoMeteo = "Sunny! ☀"; break;
+        case "Clouds": tipoMeteo = "Cloudy ⛅"; break;
+    }
+
+
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead><tr><th>Weather</th><th>Temperature</th><th>Humidity</th><th>Perceived Temperature</th><th>Wind</th></tr></thead>
+        <tbody>
+
+            <tr>
+                <td>@tipoMeteo </td>
+                <td>@Model.Main.Temperature °C</td>
+                <td>@Model.Main.Humidity %</td>
+                <td>@Model.Main.Percepita °C</td>
+                <td>@Model.Wind.Speed Nodi</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    <br />
+    <a asp-action="" class="btn btn-sm btn-primary">Search Again!</a>
+    <br />
+    @switch (Model.Weather[0].Visibility.ToString())
+    {
+        case "Clear":
+            <img src="~/Images/sunny.jpg" height="550" width="1120">
+            ; break;
+        case "Clouds":
+            <img src="~/Images/cloudy.jpg" height="550" width="1120">
+            ; break;
+        case "Rain":
+                <img src="~/Images/rainy.jpg" height="550" width="1120">
+                ; break;
+        }
+}
+catch
+{
+
+    <h1>I am sorry, I can't find your city :(</h1>
+
+    <br />
+    <a asp-action="" class="btn btn-sm btn-primary">Search Again!</a>
+
+}

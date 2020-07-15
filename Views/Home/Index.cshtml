@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Rago Weather";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Have a Sunny Day!</h1>
+    <br />
+    <label for="usr">Insert your City</label>
+    <input type="text" class="form-control" id="usr" text-center>
+    <br />
+    <input type="button" class="btn btn-info" id="WeatherSearch" value="Check the weather!" />
+</div>
+
+
+@section Scripts {
+    <script type="text/javascript">
+        $("#WeatherSearch").click(function () {
+            var txtVal = $("#usr").val();
+            window.location = "@Url.Action("WeatherData","Home")" +
+                              "/" + txtVal;
+        });
+    </script>
+}
+

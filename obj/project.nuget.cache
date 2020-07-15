@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "9zVytM4L+KeNSR9ZYx1S6Gao2sJALm5FLRRoOVJawcQEqLav4kWqdWbepfuDbRLCoGsY8eknaG0lOFtWbdzypw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\simone.ragonesi\\source\\repos\\RagoWeather\\RagoWeather\\RagoWeather.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\simone.ragonesi\\.nuget\\packages\\bootstrap\\4.5.0\\bootstrap.4.5.0.nupkg.sha512",
+    "C:\\Users\\simone.ragonesi\\.nuget\\packages\\jquery\\3.0.0\\jquery.3.0.0.nupkg.sha512",
+    "C:\\Users\\simone.ragonesi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\simone.ragonesi\\.nuget\\packages\\popper.js\\1.16.0\\popper.js.1.16.0.nupkg.sha512"
+  ],
+  "logs": []
+}
