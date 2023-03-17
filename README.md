@@ -1,6 +1,6 @@
 # ASP.NET-Core-Weather-Forecast-Website
 
-                                 _ABSTRACT_ 
+## Abstract 
 
 The following is a website written in Asp.NET Core for educational purposes. 
 It calls OpenWeatherMap API (https://api.openweathermap.org) to get weather information for specified cities. 
@@ -8,7 +8,7 @@ The token that is passed to the API is free, you can use it in other projects or
 subscribe to OpenWeatherMap and get your own for free.
 
 
-                               _Instructions_
+## Instructions
                                     
  1) download and unpack the archive.
  2) open visual studio as administrator.
@@ -16,4 +16,4 @@ subscribe to OpenWeatherMap and get your own for free.
  4) Build the solution and then run it!
  
                                   
-                             HAVE A SUNNY DAY :)
+> HAVE A SUNNY DAY :)
